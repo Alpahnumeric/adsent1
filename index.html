@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Ad</title>
+    <script>
+        var videos = ['QEDRDrV55q8', '-T7zyezBkuY', 'BRKbcWGkw1I', 'Bf_z_7B4Ifw', 'F7viKAPDmT0', 'KCmOB2L_djk', 'tojTf7I5H14', 'D9_WzE28IwE', 'y7ROJjWS2L0', 'UuavPx0peFc', 'I_WGI3y2jqM', '5R8euGTHBR8', '7N9HoLhZGsU', 'TiWbtpX4jsI', 'tudsOEsUYWU', 'bbEy98llGRU', 'uxieMOdo6IU', 'qrXvICGm-58', 'nusZoYBbibo', 'B0YOlACRlJM', '2Md5lPyuvsk', 'x5vtRQZmnwE', '4ruCsnRmP4A', 'w7cQRr5Yca8', 'ZsFUqPYlYjQ', 'n4OAtMEXNfc', 'ieSzsh4hJWI', 'zcdDg30VBgo', 'zvydETA5cYw', 'kNP2lahOhvo', 'wNjQishYOy0', 'aAVFCH9x7Og', 'kj-SjwVsBDs', 'Dz28sQc-1Mk', 'ALaqqMY2m0k', 'RaEeX4J_TyQ', '8QRs0ejxjEc', 'Jn4B1gjHug0', 'D5MLutafypY', 'lOGdCg61QoE', 'WA1h9h7-_Z4', 'yXE_p_1Squg', '8UqZzZWZd-Y', 'Ju-ETwtYuT8', 'bivaifVTQME', '_oACRt-Qp-s', 'DwhTYFwfACA', 'V1-qbHbuNBU', 'IKPtNDYezLY', '79uA-gHvw18', 'RyeDBZaxFa8', 'XEEU1nQeGNA', 'vWv-RMV2nOE', '33D5iccLDK0', 'Y_7WgXAlLFg', 'qpurHfNLY24', 'DMA4o6zqw58', 'g6krjPi4Osc', 'SXQY3A2eJc8', 'oUMo1il7me4', 'yEH4Yum4nN4', 'KjpVMX3wcJQ', 'u1QdH6ZgJ3M', 'kCvF0GmiHq4', 'QFsXJGlShTo', 'lDUOmY80GhU', 'LhGJvGhIzaw', 'PXTagE7BtRU', 'J5I_qRADxIo', 'fB9ERHjCzfI', 'Tbxq0IDqD04', 'Lu8To4CwPfg', 'GqKXkKplELU', 'LMPKVWN8NQk', 'Ln8_AUCIkAw', 'YxhJD40NaMs', 'ewcsazvpxT0', 'v9ilXA1bHg8', '-kwRrnS5vV4', 'iQ1-jSvxMJ0', 'pfxB5ut-KTs', 'sjgLb0HJ3VE']
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var VidTag = videos[Math.floor(Math.random() * videos.length)];
+            var YT = "https://www.youtube.com/embed/"
+            var randomVideoUrl = YT.concat(VidTag)
+            var randomVideoUrl2 = 'https://www.youtube.com/embed/RcnksOUugcA'
+            player.setAttribute('width', '640');
+            player.setAttribute('height', '390');
+            player.setAttribute('src', randomVideoUrl);
+            player.setAttribute('allowfullscreen', true);
+            playerDiv.appendChild(player);
+        };
+    </script>
+</head>    
+<body>
+    <div id = "random_player"/>
+</body>
+</html>
